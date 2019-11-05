@@ -5,7 +5,7 @@
 
       $ch = curl_init();
       $timeout = 5;
-      curl_setopt($ch, CURLOPT_URL, "https://portal.sidiv.registrocivil.cl/usuarios-portal/pages/DocumentRequestStatus.xhtml?RUN=" . $sRun . "&type=" . $sTipo . "serial=" . $sSerie);
+      curl_setopt($ch, CURLOPT_URL, "https://portal.sidiv.registrocivil.cl/usuarios-portal/pages/DocumentRequestStatus.xhtml?RUN=" . $sRun . "&type=" . $sTipo . "&serial=" . $sSerie);
       curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko");
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
       curl_setopt($ch, CURLOPT_SSL_VERIFYHOST,false);
