@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="validador.js" type="text/javascript">
+
+  </script>
+</head>
+
+<body>
+  <form id="verificarut" class="col-md-8 ml-auto mr-auto contact-form">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="col text-left">
+        <div class="form-group">
+          <label class="bmd-label-floating"></label>
+          <select id="hTipo" name="hTipo" class="form-control selectpicker">
+            <option value="0">Tipo de Documento</option>
+            <option value="CEDULA">Cédula de Identidad</option>
+            <option value="CEDULA_EXT">Cédula de Identidad Extranjeros</option>
+            <option value="PASAPORTE_PG">Pasaporte</option>
+            <option value="PASAPORTE_DIPLOMATICO">Pasaporte Diplomático</option>
+            <option value="PASAPORTE_OFICIAL">Pasaporte Oficial</option>
+          </select>
+        </div>
+      </div>
+      <div class="col text-left">
+        <div class="form-group">
+          <label class="bmd-label-floating">RUN (Ej: 12345678-9)</label>
+          <input id="hRun" name="hRun" type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="col text-left">
+        <div class="form-group">
+          <label class="bmd-label-floating">N° Documento/Serie/Cuadernillo</label>
+          <input id="hSerie" name="hSerie" type="text" class="form-control">
+        </div>
+      </div>
+      <div class="col text-left">
+        <div class="form-group">
+          <label class="bmd-label-floating">Correo Electrónico</label>
+          <input id="hEmail" type="email" class="form-control">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mt-4 ml-auto mr-auto text-center">
+      <button id="verirun" class="btn btn-primary">
+        Verificar y Continuar
+      </button>
+      <div class="display-error"></div>
+    </div>
+  </div>
+</form>
+</body>
+</html>
